@@ -6,12 +6,12 @@ import { getSession, useSession } from "next-auth/react";
 import { useRouter } from "next/router";
 import { useRecoilState } from "recoil";
 import Modal from "../components/Modal";
-import { modalState, modalTypeState } from "../atoms/modalAtom";
+import { modalState, modalTypeState } from "../atoms/ModalAtom";
 import { AnimatePresence } from "framer-motion";
 import { connectToDatabase } from "../util/mongodb";
 import Widgets from "../components/Widgets";
 import axios from "axios";
-
+//dfdf
 export default function Home({ posts, articles }) {
   console.log("articles", articles);
   const router = useRouter();
