@@ -13,7 +13,6 @@ import Widgets from "../components/Widgets";
 import axios from "axios";
 //dfdf
 export default function Home({ posts, articles }) {
-  console.log("articles", articles);
   const router = useRouter();
   const { status } = useSession({
     required: true,

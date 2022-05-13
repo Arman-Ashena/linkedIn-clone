@@ -33,7 +33,6 @@ const Post = ({ post, modalPost }) => {
   };
 
   const deletePost = async () => {
-    console.log("qwe", post);
     const { status } = await axios.delete(
       `${process.env.NEXTAUTH_URL}/api/posts/${post._id}`
     );

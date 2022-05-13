@@ -10,7 +10,6 @@ import lpg1 from "../public/lpg1.svg";
 import { getProviders, signIn } from "next-auth/react";
 
 function Home({ providers }) {
-  console.log("qqq", providers);
   return (
     <>
       <div className="relative space-y-10 ">

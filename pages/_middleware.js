@@ -8,7 +8,7 @@ export async function middleware(req) {
       secret: process.env.JWT_SECRET,
       secureCookie: process.env.NODE_ENV === "production",
     });
-    console.log("ww", session);
+
     //if (!session) return NextResponse.redirect("http:localhost:3000/home");
     // if user is authenticated, continue
   }
