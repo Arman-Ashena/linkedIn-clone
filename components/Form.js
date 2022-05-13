@@ -25,7 +25,7 @@ const Form = () => {
       };
       try {
         const { data } = await axios.post(
-          `${NEXTAUTH_URL}/api/posts/`,
+          `${process.env.NEXTAUTH_URL}/api/posts/`,
           newData
         );
         setModalOpen(false);
