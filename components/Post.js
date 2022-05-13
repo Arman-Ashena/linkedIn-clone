@@ -35,7 +35,7 @@ const Post = ({ post, modalPost }) => {
   const deletePost = async () => {
     console.log("qwe", post);
     const { status } = await axios.delete(
-      `http://localhost:3000/api/posts/${post._id}`
+      `${NEXTAUTH_URL}/api/posts/${post._id}`
     );
     if (status == 200) {
       setHandlePost(true);
