@@ -33,9 +33,7 @@ const Post = ({ post, modalPost }) => {
   };
 
   const deletePost = async () => {
-    const { status } = await axios.delete(
-      `${process.env.NEXTAUTH_URL}/api/posts/${post._id}`
-    );
+    const { status } = await axios.delete(`/api/posts/${post._id}`);
     if (status == 200) {
       setHandlePost(true);
       setModalOpen(false);

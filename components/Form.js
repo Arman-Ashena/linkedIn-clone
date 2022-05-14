@@ -24,10 +24,7 @@ const Form = () => {
         createdAt: new Date().toString(),
       };
       try {
-        const { data } = await axios.post(
-          `${process.env.NEXTAUTH_URL}/api/posts/`,
-          newData
-        );
+        const { data } = await axios.post(`/api/posts/`, newData);
         setModalOpen(false);
         setHandlePost(true);
       } catch (error) {

@@ -12,7 +12,7 @@ const Feed = ({ posts }) => {
   //dfsfs
   useEffect(() => {
     const getPosts = async () => {
-      const { data } = await axios.get(`${process.env.NEXTAUTH_URL}/api/posts`);
+      const { data } = await axios.get(`/api/posts`);
       setRealtimeData(data);
       setHandlePost(false);
       setUseSSRPosts(false);
